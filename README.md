@@ -3,7 +3,7 @@
 ## Overview
 
 <p align="justify">
-The official landing page for **EQ Software Cloud**, a professional software development studio. This project is a high-performance, responsive web application designed with a **mobile-first approach**, showcasing the studio's expertise in web/mobile development, UI/UX design, and cloud solutions. It emphasizes clean architectural patterns, seamless internationalization (i18n), and high-quality visual interactions using Tailwind CSS and Vanilla JavaScript.
+The official landing page for <b>EQ Software Cloud</b>, a professional software development studio. This project is a high-performance, responsive web application designed with a <b>mobile-first approach</b>, showcasing the studio's expertise in web/mobile development, UI/UX design, and cloud solutions. It emphasizes clean architectural patterns, seamless internationalization (i18n), and high-quality visual interactions using Tailwind CSS and Vanilla JavaScript.
 </p>
 
 
