@@ -1,0 +1,324 @@
+/*
+ * Google Fonts Import
+ * Font Family: Inter
+ * Weights: 100 to 900
+ * Usage: Global font for the application
+ */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/*
+ * Global Styles
+ * Sets the default font family for the entire document
+ */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Clients Carousel Styles
+ * Infinite scrolling animation for client logos
+ */
+.clients-carousel {
+  width: 100%;
+  overflow: hidden;
+  padding: 1rem 0;
+}
+
+.clients-track {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  animation: scroll 25s linear infinite;
+  width: max-content;
+}
+
+@media (min-width: 1024px) {
+  .clients-track {
+    gap: 4rem;
+  }
+}
+
+.client-logo {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+@media (min-width: 640px) {
+  .client-logo {
+    height: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .client-logo {
+    height: 48px;
+  }
+}
+
+.client-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-reverse {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Reverse direction for second row - starts from opposite end */
+.clients-track-reverse {
+  animation: scroll 25s linear infinite reverse;
+  animation-delay: -12.5s;
+}
+
+/* Pause animation on hover */
+.clients-carousel:hover .clients-track {
+  animation-play-state: paused;
+}
+
+/*
+ * Experience Section Scroll
+ * Custom scrollbar styling
+ */
+.experience-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(88, 108, 134, 0.3) transparent;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.experience-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.experience-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.experience-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(88, 108, 134, 0.3);
+  border-radius: 3px;
+}
+
+.experience-card {
+  scroll-snap-align: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/*
+ * Project Carousel Styles
+ * Image slideshow for portfolio projects
+ */
+.project-carousel {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-radius: 1.25rem;
+}
+
+.carousel-images {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  background-color: #f8fafc;
+}
+
+.carousel-image.active {
+  opacity: 1;
+}
+
+.carousel-dots {
+  z-index: 10;
+}
+
+.dot {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  padding: 0;
+}
+
+.dot:hover {
+  transform: scale(1.3);
+}
+
+.dot.active {
+  transform: scale(1.2);
+}
+
+/*
+ * Project Card Styles
+ * Responsive max-widths for different screen sizes
+ */
+.project-card {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .project-card {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-card {
+    max-width: none;
+    margin: 0;
+  }
+}
+
+/*
+ * Animation for pulse effect
+ */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/*
+ * Smooth scroll behavior
+ */
+html {
+  scroll-behavior: smooth;
+}
+
+/*
+ * Mobile Menu Transitions
+ */
+#mobile-menu {
+  transition: opacity 0.3s ease;
+}
+
+#mobile-menu.hidden {
+  pointer-events: none;
+}
+
+/*
+ * Focus states for accessibility
+ */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #0ea5e9;
+  outline-offset: 2px;
+}
+
+/*
+ * Loading state for images
+ */
+img {
+  background-color: #f3f4f6;
+}
+
+/*
+ * Desktop-specific hover effects
+ */
+@media (min-width: 1024px) {
+  .experience-card {
+    cursor: pointer;
+  }
+  
+  .project-card:hover .project-carousel {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/*
+ * Hero Gradient Text
+ * Beautiful gradient for "Futuro Digital" heading
+ */
+.hero-gradient-text {
+  background: linear-gradient(135deg, #0ea5e9 0%, #1e4beb 50%, #0ea5e9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/*
+ * Contact Card Gradient
+ * Purple to blue gradient for contact section
+ */
+.contact-gradient-card {
+  background: linear-gradient(160deg, #6366f1 0%, #512da4 35%, #1e4beb 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle overlay for depth */
+.contact-gradient-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/*
+ * Language Switcher Styles
+ */
+.lang-btn,
+.lang-btn-mobile {
+  color: #586c86;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.lang-btn:hover,
+.lang-btn-mobile:hover {
+  color: #1e4beb;
+}
+
+.lang-btn.active,
+.lang-btn-mobile.active {
+  background: #0ea5e9;
+  color: white;
+}
