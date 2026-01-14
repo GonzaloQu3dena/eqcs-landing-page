@@ -249,13 +249,6 @@ button:focus-visible {
 }
 
 /*
- * Loading state for images
- */
-img {
-  background-color: #f3f4f6;
-}
-
-/*
  * Desktop-specific hover effects
  */
 @media (min-width: 1024px) {

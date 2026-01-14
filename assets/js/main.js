@@ -39,6 +39,9 @@ window.translations = {
     // Clients
     'clients.title': 'COMPANIES THAT TRUST US',
     
+    // Tech Stack
+    'tech.title': 'TECHNOLOGIES WE USE',
+    
     // Contact
     'contact.title': 'Start a<br />Conversation',
     'contact.description': 'Do you have a project in mind or simply want to know more? We would love to hear from you and help you build the future.',
@@ -51,7 +54,7 @@ window.translations = {
     'footer.uiux': 'UI/UX Design',
     'footer.cloud': 'Cloud Solutions',
     'footer.contact': 'Contact',
-    'footer.location': 'Jr. El cortijo 595, Monterrico Santiago de Surco, Lima - Perú',
+    'footer.location': 'Lima - Perú<br />Jr. El cortijo 595, Monterrico Santiago de Surco',
     'footer.copyright': '© 2026 EQ Software Cloud. All rights reserved'
   },
   es: {
@@ -78,6 +81,9 @@ window.translations = {
     // Clients
     'clients.title': 'EMPRESAS QUE CONFÍAN EN NOSOTROS',
     
+    // Tech Stack
+    'tech.title': 'TECNOLOGÍAS QUE USAMOS',
+    
     // Contact
     'contact.title': 'Inicia una<br />Conversación',
     'contact.description': '¿Tienes un proyecto en mente o simplemente quieres saber más? Nos encantaría escucharte y ayudarte a construir el futuro.',
@@ -90,7 +96,7 @@ window.translations = {
     'footer.uiux': 'Diseño UI/UX',
     'footer.cloud': 'Soluciones Cloud',
     'footer.contact': 'Contacto',
-    'footer.location': 'Jr. El cortijo 595, Monterrico Santiago de Surco, Lima - Perú',
+    'footer.location': 'Lima - Perú<br />Jr. El cortijo 595, Monterrico Santiago de Surco',
     'footer.copyright': '© 2026 EQ Software Cloud. Todos los derechos reservados'
   }
 };
