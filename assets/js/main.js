@@ -51,7 +51,7 @@ window.translations = {
     'footer.uiux': 'UI/UX Design',
     'footer.cloud': 'Cloud Solutions',
     'footer.contact': 'Contact',
-    'footer.location': 'Lima, Peru',
+    'footer.location': 'Jr. El cortijo 595, Monterrico Santiago de Surco, Lima - Perú',
     'footer.copyright': '© 2026 EQ Software Cloud. All rights reserved'
   },
   es: {
@@ -90,7 +90,7 @@ window.translations = {
     'footer.uiux': 'Diseño UI/UX',
     'footer.cloud': 'Soluciones Cloud',
     'footer.contact': 'Contacto',
-    'footer.location': 'Lima, Perú',
+    'footer.location': 'Jr. El cortijo 595, Monterrico Santiago de Surco, Lima - Perú',
     'footer.copyright': '© 2026 EQ Software Cloud. Todos los derechos reservados'
   }
 };
